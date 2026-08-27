@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanchonete</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lanchonete</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Código do produto</th>
+          <th>Preço do produto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>R$ 5,00</td></tr>
+        <tr><td>2</td><td>R$ 3,50</td></tr>
+        <tr><td>3</td><td>R$ 4,80</td></tr>
+        <tr><td>4</td><td>R$ 8,90</td></tr>
+        <tr><td>5</td><td>R$ 7,32</td></tr>
+      </tbody>
+    </table>
+
+    <div class="form-group">
+      <label for="codigo">Código do produto comprado:</label>
+      <input type="number" id="codigo" min="1" max="5" placeholder="1 a 5">
+    </div>
+
+    <div class="form-group">
+      <label for="quantidade">Quantidade comprada:</label>
+      <input type="number" id="quantidade" min="1" placeholder="Ex: 3">
+    </div>
+
+    <button id="calcular">Calcular</button>
+
+    <div id="resultado" class="resultado hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
